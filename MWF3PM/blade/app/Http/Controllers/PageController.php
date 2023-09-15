@@ -11,8 +11,7 @@ function getUsers() {
     ];
 }
 class PageController extends Controller
-{
-    
+{    
     public function showHome () {
         return view('home');
     }
