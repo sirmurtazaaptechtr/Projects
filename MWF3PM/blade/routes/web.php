@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PageController;
+use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,22 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
-
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
-
-Route::get('/shop', function () {
-    return view('shop');
-})->name('shop');
-
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
-
-Route::get('/product', function () {
-    return view('product');
-})->name('product');
+Route::get('/', [PageController::class,'showHome'])->name('home');
+Route::get('/about', [PageController::class,'showAbout'])->name('about');
+Route::get('/shop', [PageController::class,'showShop'])->name('shop');
+Route::get('/contact', [PageController::class,'showContact'])->name('contact');
+Route::get('/product', [PageController::class,'showProduct'])->name('product');
+Route::get('/users', [PageController::class,'showUsers'])->name('users');
+Route::get('/user/{id}', [PageController::class,'showUser'])->name('user');
