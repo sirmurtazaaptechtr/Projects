@@ -38,7 +38,7 @@
                 <td>{{ $employee->address }}</td>
                 <td>{{ $employee->city }}</td>
                 <td>{{ $employee->country }}</td>
-                <td><a href="#">View</a></td>
+                <td><a href="{{ route('employee',['id' => $employee->id]) }}">View</a></td>
             </tr>                
             @endforeach            
         </tbody>

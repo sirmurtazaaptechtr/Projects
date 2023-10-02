@@ -18,5 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/employees',[EmployeeController::class,'ShowAllEmployees']);
-Route::get('/employee/{id}',[EmployeeController::class,'ShowEmployee']);
+Route::get('/employees',[EmployeeController::class,'ShowAllEmployees'])->name('employees');
+Route::get('/employee/{id}',[EmployeeController::class,'ShowEmployee'])->name('employee');
