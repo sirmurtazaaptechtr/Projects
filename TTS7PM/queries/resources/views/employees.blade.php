@@ -7,7 +7,7 @@ Welcome - All Employees
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">#</th>
+                <th scope="col">id</th>
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
                 <th scope="col">Phone</th>
@@ -21,7 +21,7 @@ Welcome - All Employees
         <tbody>
             @foreach ($employees as $id => $employee)
             <tr>
-                <th scope="row">{{ $id + 1 }}</th>
+                <th scope="row">{{ $employee->id }}</th>
                 <td>{{ $employee->name }}</td>
                 <td>{{ $employee->email }}</td>
                 <td>{{ $employee->phone }}</td>
@@ -34,6 +34,9 @@ Welcome - All Employees
             @endforeach        
         </tbody>
     </table>
+    <div>
+        {{ $employees->links() }}
+    </div>
 </div>
 @endsection
 
