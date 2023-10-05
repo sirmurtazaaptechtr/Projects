@@ -4,6 +4,7 @@ Welcome - All Employees
 @endsection
 @section('content')
 <div class="container">
+    <a href="{{ route('newEmployee') }}" class="btn btn-outline-success btn-sm">Add Employee</a>
     <table class="table">
         <thead>
             <tr>
@@ -29,7 +30,13 @@ Welcome - All Employees
                 <td>{{ $employee->address }}</td>
                 <td>{{ $employee->city }}</td>
                 <td>{{ $employee->country }}</td>
-                <td><a href="{{ route('employee', ['id' => $employee->id]) }}" class="btn btn-outline-success">View</a></td>
+                <td>
+                    <div class="btn-group">
+                        <a href="{{ route('employee', ['id' => $employee->id]) }}" class="btn btn-outline-success btn-sm">View</a>
+                        <a href="{{ route('deleteEmployee', ['id' => $employee->id]) }}" class="btn btn-outline-danger btn-sm">Delete</a>
+                        <a href="#" class="btn btn-outline-info btn-sm">Update</a>
+                    </div>
+                </td>
             </tr>
             @endforeach        
         </tbody>
