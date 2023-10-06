@@ -6,6 +6,9 @@ Welcome - All Employees
 <main class="container">
     <h1>All Employees</h1>
 
+    <div>
+        <a type="button" class="btn btn-outline-success" href="{{ route('addNewEmployee') }}"> + Add Employee</a>
+    </div>
     <table class="table">
         <thead>
             <tr>
@@ -23,7 +26,7 @@ Welcome - All Employees
         <tbody>
             @foreach ($employees as $id => $employee)
             <tr>
-                <th scope="row">{{ $id + 1 }}</th>
+                <th scope="row">{{ $employee->id }}</th>
                 <td>{{ $employee->name }}</td>
                 <td>{{ $employee->email }}</td>
                 <td>{{ $employee->age }}</td>
@@ -31,10 +34,19 @@ Welcome - All Employees
                 <td>{{ $employee->address }}</td>
                 <td>{{ $employee->city }}</td>
                 <td>{{ $employee->country }}</td>
-                <td><a href="{{ route('employee',['id' => $employee->id]) }}">View</a></td>
+                <td>
+                    <div class="btn-group">
+                        <a type="button" class="btn btn-outline-info" href="{{ route('employee',['id' => $employee->id]) }}">View</a>
+                        <a type="button" class="btn btn-outline-danger" href="{{ route('deleteEmployee',['id' => $employee->id]) }}">Delete</a>
+                        <a type="button" class="btn btn-outline-warning" href="#">Update</a>
+                    </div>
+                </td>
             </tr>                
             @endforeach            
         </tbody>
     </table>
+    <div>
+        {{ $employees->links() }}
+    </div>
 </main>    
 @endsection 
