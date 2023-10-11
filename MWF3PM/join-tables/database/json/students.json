@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Ali Khan",
+    "age": 21,
+    "email": "ali.khan@example.com",
+    "city_id": 198
+  },
+  {
+    "name": "Sara Ahmed",
+    "age": 22,
+    "email": "sara.ahmed@example.com",
+    "city_id": 246
+  },
+  {
+    "name": "Mohammad Hassan",
+    "age": 20,
+    "email": "mohammad.hassan@example.com",
+    "city_id": 155
+  },
+  {
+    "name": "Aisha Malik",
+    "age": 23,
+    "email": "aisha.malik@example.com",
+    "city_id": 351
+  },
+  {
+    "name": "Ahmed Raza",
+    "age": 19,
+    "email": "ahmed.raza@example.com",
+    "city_id": 114
+  },
+  {
+    "name": "Fatima Zaidi",
+    "age": 20,
+    "email": "fatima.zaidi@example.com",
+    "city_id": 293
+  },
+  {
+    "name": "Bilal Mahmood",
+    "age": 22,
+    "email": "bilal.mahmood@example.com",
+    "city_id": 329
+  },
+  {
+    "name": "Hina Abbas",
+    "age": 21,
+    "email": "hina.abbas@example.com",
+    "city_id": 341
+  },
+  {
+    "name": "Kamran Ali",
+    "age": 24,
+    "email": "kamran.ali@example.com",
+    "city_id": 389
+  },
+  {
+    "name": "Nadia Khan",
+    "age": 19,
+    "email": "nadia.khan@example.com",
+    "city_id": 135
+  },
+  {
+    "name": "Imran Amin",
+    "age": 23,
+    "email": "imran.amin@example.com",
+    "city_id": 154
+  },
+  {
+    "name": "Sadia Iqbal",
+    "age": 20,
+    "email": "sadia.iqbal@example.com",
+    "city_id": 398
+  },
+  {
+    "name": "Asad Ali",
+    "age": 21,
+    "email": "asad.ali@example.com",
+    "city_id": 252
+  },
+  {
+    "name": "Ayesha Siddiqui",
+    "age": 22,
+    "email": "ayesha.siddiqui@example.com",
+    "city_id": 136
+  },
+  {
+    "name": "Omar Shah",
+    "age": 20,
+    "email": "omar.shah@example.com",
+    "city_id": 25
+  },
+  {
+    "name": "Saima Akhtar",
+    "age": 19,
+    "email": "saima.akhtar@example.com",
+    "city_id": 371
+  },
+  {
+    "name": "Nabeel Ahmed",
+    "age": 24,
+    "email": "nabeel.ahmed@example.com",
+    "city_id": 198
+  },
+  {
+    "name": "Bushra Riaz",
+    "age": 23,
+    "email": "bushra.riaz@example.com",
+    "city_id": 299
+  },
+  {
+    "name": "Adnan Khan",
+    "age": 21,
+    "email": "adnan.khan@example.com",
+    "city_id": 1
+  },
+  {
+    "name": "Fariha Aslam",
+    "age": 22,
+    "email": "fariha.aslam@example.com",
+    "city_id": 393
+  }
+]
