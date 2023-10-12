@@ -22,6 +22,7 @@ Route::get('/newEmployee', function () {
 })->name('newEmployee');
 
 Route::get('/employees',[EmployeeController::class,'showEmployees'])->name('employees');
+Route::get('/allemployees',[EmployeeController::class,'viewEmployees'])->name('allemployees');
 Route::get('/employee/{id}',[EmployeeController::class,'showEmployee'])->name('employee');
 Route::get('/dropCity',[EmployeeController::class,'showCities'])->name('dropCity');
 Route::get('/deleteEmployee/{id}',[EmployeeController::class,'deleteEmployee'])->name('deleteEmployee');

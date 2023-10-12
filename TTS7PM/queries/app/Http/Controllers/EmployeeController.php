@@ -5,10 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
+use App\Models\employee;
+
 use function Laravel\Prompts\select;
 
 class EmployeeController extends Controller
-{
+{    
+    public function viewEmployees() {
+        $employees = new employee;
+        $data = $employees::all();
+        
+        return view('allemployees',['employees' => $data]);
+        // return $data;
+    }
     public function showEmployees () {
         // $employees = DB::table('employees')->get();
         $employees = DB::table('employees')->paginate(5);
