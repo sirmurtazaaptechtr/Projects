@@ -1,0 +1,44 @@
+[
+    {
+      "name": "Miss Nadia Khan",
+      "age": 29,
+      "email": "nadia.khan@example.com",
+      "city_id": 135
+    },
+    {
+      "name": "Sir Imran Amin",
+      "age": 33,
+      "email": "imran.amin@example.com",
+      "city_id": 154
+    },
+    {
+      "name": "Miss Sadia Iqbal",
+      "age": 30,
+      "email": "sadia.iqbal@example.com",
+      "city_id": 398
+    },
+    {
+      "name": "Sir Asad Ali",
+      "age": 31,
+      "email": "asad.ali@example.com",
+      "city_id": 252
+    },
+    {
+      "name": "Miss Ayesha Siddiqui",
+      "age": 32,
+      "email": "ayesha.siddiqui@example.com",
+      "city_id": 136
+    },
+    {
+      "name": "Sir Omar Shah",
+      "age": 30,
+      "email": "omar.shah@example.com",
+      "city_id": 25
+    },
+    {
+      "name": "Miss Saima Akhtar",
+      "age": 29,
+      "email": "saima.akhtar@example.com",
+      "city_id": 371
+    }
+  ]
