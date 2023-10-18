@@ -16,8 +16,10 @@ class TeacherController extends Controller
     }
 
     public function showAll() {
-        $students = DB::table('students');              
+        $students = DB::table('students')
+            ->select('name','email');              
         $all = DB::table('teachers')
+            ->select('name','email')
             ->union($students)
             ->get();
         return $all;
